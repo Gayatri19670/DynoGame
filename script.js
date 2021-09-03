@@ -6,14 +6,14 @@ document.onkeydown = function(e) {
         setTimeout(() => {
             dino.classList.remove('animationDino')
         }, 700);
-    }
+       }
     if (e.keyCode == 39) {
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputerStyle(dino, null).getPropertyValue('left'))
         dino.style.left = dinoX + 112 + "px";
     }
 }
-
+  
 
 
 setInterval(() => {
